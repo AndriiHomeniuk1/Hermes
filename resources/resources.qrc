@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icons/disconected_pair.png</file>
+    <file>icons/focus_locked.png</file>
+    <file>icons/focus_opend.png</file>
+    <file>icons/activated_pair.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,356 @@
+/* ********* Main Window Styling Group START ********* */
+/* ------ Primary Content Area START ------ */
+#centralwidget {
+    background-color: rgb(80, 80, 80);
+}
+/* ====== Primary Content Area END ====== */
+
+/* ------ Application Header & Footer Background START ------ */
+#MainWindow > QWidget {
+
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.5, y2:0.5,
+        stop:0 #2f2f2f, stop:0.2 #313131, stop:0.8 #2a2a2a, stop:1 #242424);
+}
+
+/* ====== Application Header & Footer Background END ====== */
+
+/* ------ Window Header (Buttons + Label) START ------ */
+#CustomTitleBar {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+#closeButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.5, y2:0.5,
+        stop:0 #ff6b68, stop:0.5 #ff5f56, stop:1 #d84745);
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    font-size: 8px;
+    font-weight: bold;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+#closeButton:hover {
+    background-color: #ff3b30;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#closeButton:pressed {
+    background-color: #b81e1e;
+}
+
+#minimizeButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.5, y2:0.5,
+        stop:0 #ffcf40, stop:0.5 #ffbd2e, stop:1 #e0a624);
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    font-size: 6px;
+    font-weight: bold;
+    color: #705000;
+    text-align: center;
+}
+
+#minimizeButton:hover {
+    background-color: #ff9900;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#minimizeButton:pressed {
+    background-color: #c27900;
+}
+
+#titleLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e5e5e5;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#titleLabel:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ====== Window Header (Buttons + Label) END ====== */
+
+/* ------Tab Navigation Bar  START ------ */
+QTabBar::tab {
+    background: #222;
+    color: #bbb;
+    padding: 2px 4px;
+    border-radius: 6px;
+    min-width: 80px;
+}
+
+QTabBar::tab:selected {
+    background: #00aaff;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #00aaff;
+}
+
+QTabBar::tab:hover {
+    background: #333;
+    color: #fff;
+}
+
+QTabWidget::pane {
+    border: none;
+}
+/* ====== Tab Navigation Bar END ====== */
+
+/* ------ QLineEdit START ------ */
+QLineEdit {
+    background-color: rgb(220, 230, 245);
+    color: rgb(20, 20, 20);
+    border: 2px solid rgb(130, 160, 200);
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QLineEdit:hover {
+    border: 2px solid rgb(160, 190, 230);
+}
+
+QLineEdit:focus {
+    background-color: rgb(220, 230, 245);
+}
+/* ====== QLineEdit END ====== */
+/* ********* Main Window Styling Group END ********* */
+
+
+/* ********* Trade Configuration Group START ********* */
+/* ------ Trade Configuration Box START ------ */
+#tradeConfigurationBox {
+    border: 1px solid transparent;
+    background-color: rgb(60, 60, 60);
+}
+/* ====== Trade Configuration Box END ====== */
+
+/* ------ Label USD\St_p\Tp_p START ------ */
+#tradeConfigurationBox QLabel {
+	font: 12pt "MS Shell Dlg 2";
+	color: rgb(180, 220, 250);
+}
+/* ====== Label USD\St_p\Tp_p END ====== */
+
+/* ------Symbol Label  START ------ */
+#tradeConfigurationBox #symbolLabel {
+	color: rgb(0, 170, 255);
+	font: 12pt "MS Shell Dlg 2";
+}
+/* ====== Symbol Label END ====== */
+
+/* ------ ActivateSymbolPair Button START ------ */
+#activateSymbolPairButton {
+    background-color: rgb(100, 120, 160);
+    color: rgb(240, 240, 240);
+    border-radius: 12px;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+#activateSymbolPairButton:hover {
+    background-color: rgb(120, 140, 180);
+}
+
+#activateSymbolPairButton:pressed {
+    background-color: rgb(80, 100, 140);
+}
+/* ====== ActivateSymbolPair Button END ====== */
+
+/* ------ Pair Status Icon START ------ */
+QLabel#pairStatusIcon {
+    background: none;
+}
+/* ====== Pair Status Icon END ====== */
+/* ********* Trade Configuration Group END ********* */
+
+
+/* ********* Trade GROUP START ********* */
+/* ------ Trade GroupBox START ------ */
+#tradeGroupBox {
+border: 1px solid transparent;
+background-color: rgb(60, 60, 60);
+border-radius: 32px;
+}
+
+#tradeGroupBox::indicator:unchecked {
+image: url(":/icons/focus_locked.png");
+}
+
+#tradeGroupBox::indicator:checked {
+image: url(":/icons/focus_opend.png");
+}
+
+#tradeGroupBox::indicator {
+width: 32px;
+height: 32px;
+}
+/* ====== Trade GroupBox END ====== */
+
+/* ------ Close Position GroupBox START ------ */
+#closePositionGroupBox {
+border: 1px solid transparent;
+background-color: rgb(60, 60, 60);
+border-radius: 32px;
+}
+
+#closePositionGroupBox::indicator:unchecked {
+image: url(":/icons/focus_locked.png");
+}
+
+#closePositionGroupBox::indicator:checked {
+image: url(":/icons/focus_opend.png");
+}
+
+#closePositionGroupBox::indicator {
+width: 32px;
+height: 32px;
+}
+/* ====== Close Position GroupBox END ====== */
+
+/* ------ Buy Button START ------ */
+
+#buyButton {
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgb(60, 170, 60),
+                                stop:1 rgb(30, 100, 30));
+}
+
+#buyButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgb(80, 200, 80),
+                                stop:1 rgb(40, 130, 40));
+}
+
+#buyButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgb(40, 130, 40),
+                                stop:1 rgb(20, 80, 20));
+}
+
+/* ====== Buy Button END ====== */
+
+/* ------ Sell Button START ------ */
+
+#sellButton {
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgb(180, 50, 50),
+                                stop:1 rgb(140, 40, 40));
+}
+
+#sellButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgb(200, 60, 60),
+                                stop:1 rgb(160, 50, 50));
+}
+
+#sellButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgb(140, 40, 40),
+                                stop:1 rgb(110, 30, 30));
+}
+
+/* ====== Sell Button END ====== */
+
+/* ------ ClosePosition Button START ------ */
+
+#closePositionButton {
+    color: rgb(230, 180, 90);
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #900;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgb(140, 40, 40),
+                                stop:1 rgb(100, 20, 20));
+}
+
+#closePositionButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgb(170, 50, 50),
+                                stop:1 rgb(130, 30, 30));
+}
+
+#closePositionButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgb(120, 30, 30),
+                                stop:1 rgb(90, 10, 10));
+}
+/* ====== ClosePosition Button END ====== */
+/* ********* Trade GROUP END ********* */
+
+
+/* ********* CONNECTION GROUP START ********* */
+/* ------ Binance Connection GroupBox START ------ */
+#binanceConnectionGroupBox {
+	color: rgb(255, 248, 40);
+    border: 1px solid transparent;
+}
+/* ====== Binance Connection GroupBox END ====== */
+
+/* ------ apiKey Label START ------ */
+#apiKeyLabel {
+    font: 75 14pt "MS Shell Dlg 2";
+}
+/* ====== apiKey Label END ====== */
+
+/* ------ secretKey Label START ------ */
+#secretKeyLabel {
+    font: 75 14pt "MS Shell Dlg 2";
+}
+/* ====== secretKey Label END ====== */
+
+/* ------ Connection Status Label START ------ */
+#connectionStatusLabel {
+    font: 8pt "MS Shell Dlg 2";
+    border-radius: 10px;
+    border: 0px solid #000000;
+    background-color: red;
+    padding: 4px;
+}
+/* ====== Connection Status Label END ====== */
+
+/* ------ ConnectButton START ------ */
+#connectButton {
+    background-color: rgb(100, 120, 160);
+    color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+#connectButton:hover {
+    background-color: rgb(120, 140, 180);
+}
+
+#connectButton:pressed {
+    background-color: rgb(80, 100, 140);
+}
+/* ====== ConnectButton END ====== */
+
+/* ------ secretKeyIconLabel 🔒 START ------ */
+#secretKeyIconLabel {
+    font-size: 16px;
+}
+/* ====== secretKeyIconLabel END ====== */
+/* ********* CONNECTION GROUP END ********* */

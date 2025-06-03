@@ -1,0 +1,6 @@
+python-binance==1.0.28 # provides "binance"
+python-dotenv==1.1.0
+websocket-client==1.8.0
+pyqt5==5.15.11
+websockets~=15.0.1
+nuitka==2.7.2
