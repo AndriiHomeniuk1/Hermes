@@ -37,3 +37,37 @@ In short, Hermes helps you **keep up with the market** — when every seconds ma
   - Real-time price display within the UI
   - Active position indicator and trade history summary (Buy/Sell log)
   - User-defined alerts (e.g., price thresholds, signal triggers)
+
+---
+
+## 📁 Project Structure  
+```text  
+Hermes/  
+├── main.py                 # Entry point of the application  
+├── requirements.txt        # Python dependencies  
+├── .env.example            # Template for environment variables (API keys)  
+├── .gitignore              # Git ignore rules  
+├── .python-version         # Python version specification  
+├── README.md               # Project documentation  
+│  
+├── config/                 # Configuration and path definitions  
+│   ├──  config_paths.py    # Paths to settings, styles, and .env files  
+│   └──  settings.json      # Stores persistent user settings: trading symbol, SL/TP percentages  
+│  
+├── core/                   # Core application logic and Binance integration  
+│   ├── binance_utils.py        # Utility functions for Binance (e.g., symbol validation)  
+│   ├── client_binance.py       # Binance API client (key management, connectivity)  
+│   ├── client_warmup.py        # Keeps the Binance connection alive  
+│   ├── hermesMainWindow.py     # Main application window and UI logic  
+│   ├── place_order.py          # Market, SL, TP order execution logic  
+│   └── websockets_listener.py  # Real-time price listener via WebSocket  
+│  
+├── ui/                     # User interface components  
+│   ├── customTitleBar.py   # Custom window title bar with drag/close functionality  
+│   ├── hermes_ui.py        # PyQt5 UI layout (auto-generated)  
+│   └── ui_helpers.py       # UI utilities (e.g., input validation, error highlighting)  
+│  
+├── resources/              # Visual assets and styling  
+│   ├── style.qss           # QSS stylesheet for UI theming  
+│   └── resources.qrc       # Qt resource collection (icons, etc.)
+```
