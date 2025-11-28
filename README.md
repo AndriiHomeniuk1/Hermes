@@ -71,3 +71,6 @@ Hermes/
 │   ├── style.qss           # QSS stylesheet for UI theming  
 │   └── resources.qrc       # Qt resource collection (icons, etc.)
 ```
+---
+<img width="198" height="694" alt="hermes_1 (1)" src="https://github.com/user-attachments/assets/1f7878dd-27a6-4eff-95d7-ba53bcab568d" />
+<img width="750" height="408" alt="Hermes_2" src="https://github.com/user-attachments/assets/4c7bd406-94bc-42e5-b4bc-d659a9c6e388" />
