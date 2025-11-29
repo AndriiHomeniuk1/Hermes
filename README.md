@@ -40,6 +40,14 @@ In short, Hermes helps you **keep up with the market** — when every seconds ma
 
 ---
 
+## 🎥 Demo
+
+Watch Hermes in action:
+
+[![Watch the demo](https://img.youtube.com/vi/ROIUU0BaaCA/0.jpg)](https://youtu.be/ROIUU0BaaCA)
+
+---
+
 ## 📁 Project Structure  
 ```text  
 Hermes/  
